@@ -13,8 +13,8 @@ class Dom {
         return this.$el.outerHTML.trim();
     }
 
-    on() {
-
+    on(eventType, callback) {
+        this.$el.addEventListener(eventType, callback)
     }
 
     clear() {
