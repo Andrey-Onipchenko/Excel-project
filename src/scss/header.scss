@@ -1,4 +1,4 @@
-@import "variable";
+@import "variables";
 @import "mixins";
 
 .excel__header {
@@ -20,7 +20,7 @@
     border-radius: 2px;
     height: 20px;
     font-size: 18px;
-    line-height: 22;
+    line-height: 22px;
     outline: none;
 
     &:hover {
@@ -30,10 +30,10 @@
     &:focus {
       border: 2px solid #1a73e8;
     }
-
   }
 
-  & .button {
-  @include button(red);
+  .button {
+    @include button(red);
   }
+
 }

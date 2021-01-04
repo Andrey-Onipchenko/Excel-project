@@ -10,14 +10,17 @@
   & i {
     font-size: 18px;
   }
+
   &:active, &.active {
     color: $color;
   }
+
   &:hover {
     background: #eee;
     cursor: pointer;
   }
 }
+
 
 @mixin clear-list() {
   list-style: none;

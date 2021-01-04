@@ -1,10 +1,16 @@
-import {ExcelComponent} from "@core/ExcelComponent";
-import {createTable} from "@/components/table/table.tamplate";
+import {ExcelComponent} from '@core/ExcelComponent'
+import {createTable} from '@/components/table/table.template'
 
 export class Table extends ExcelComponent {
-    static className = 'excel__table';
+  static className = 'excel__table'
 
-    toHTML() {
-        return createTable();
-    }
+  constructor($root) {
+    super($root, {
+      // listeners: ['click', 'mousedown', 'mousemove', 'mouseup']
+    })
+  }
+
+  toHTML() {
+    return createTable(20)
+  }
 }
