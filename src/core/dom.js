@@ -55,6 +55,10 @@ class Dom {
     findAll(selector) {
         return this.$el.querySelectorAll(selector);
     }
+
+    css(styles = {}) {
+
+    }
 }
 
 // event.target
